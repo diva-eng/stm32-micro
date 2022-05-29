@@ -2679,6 +2679,22 @@
     (pin "1" (uuid 3f6b3134-9057-42cb-8991-61ce4d9b372f))
   )
 
+  (symbol (lib_id "power:VBUS") (at 228.6 106.68 0) (unit 1)
+    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (uuid 06c05959-0355-4e5e-b5fd-d3a70203028b)
+    (property "Reference" "#PWR?" (id 0) (at 228.6 110.49 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "VBUS" (id 1) (at 228.6 101.6 0))
+    (property "Footprint" "" (id 2) (at 228.6 106.68 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (id 3) (at 228.6 106.68 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 7bb455ab-604a-4c36-b07e-c9e3f7d5d2be))
+  )
+
   (symbol (lib_id "power:GND") (at 22.86 41.91 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid 09b93854-e7fe-4763-b7c1-e9994695eb70)
@@ -2795,22 +2811,6 @@
     )
     (pin "1" (uuid 980f1121-470a-419a-9d0f-cdbbed3ba505))
     (pin "2" (uuid 64c72111-4257-4c21-a47c-73a4d1d30fc2))
-  )
-
-  (symbol (lib_id "power:VBUS") (at 237.49 106.68 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
-    (uuid 198c41fc-1322-4478-b85f-35c279148562)
-    (property "Reference" "#PWR013" (id 0) (at 237.49 110.49 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "VBUS" (id 1) (at 237.49 101.6 0))
-    (property "Footprint" "" (id 2) (at 237.49 106.68 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (id 3) (at 237.49 106.68 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 150585e1-82a5-4428-b0bf-4241c30551a0))
   )
 
   (symbol (lib_id "Device:Crystal_GND24") (at 92.71 88.9 0) (unit 1)
@@ -3152,6 +3152,22 @@
     (pin "3" (uuid 8238a2bd-565e-419a-b65b-87222f2ac907))
   )
 
+  (symbol (lib_id "power:PWR_FLAG") (at 237.49 106.68 0) (unit 1)
+    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (uuid 69a7c179-446b-4bd9-a02d-6edec9d9c191)
+    (property "Reference" "#FLG?" (id 0) (at 237.49 104.775 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "PWR_FLAG" (id 1) (at 237.49 101.6 0))
+    (property "Footprint" "" (id 2) (at 237.49 106.68 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (id 3) (at 237.49 106.68 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid fdb0031a-daf1-472e-aae9-3b4281e41f08))
+  )
+
   (symbol (lib_id "MCU_ST_STM32F1:STM32F103C8Tx") (at 137.16 104.14 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 6c8b6217-0430-4eb3-a69d-23113499e018)
@@ -3278,22 +3294,6 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 186357d1-68d3-40c6-872f-ad58fdb90769))
-  )
-
-  (symbol (lib_id "power:PWR_FLAG") (at 228.6 106.68 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
-    (uuid 7a4dd703-14bc-4cf8-bc14-86c2b20a5782)
-    (property "Reference" "#FLG0102" (id 0) (at 228.6 104.775 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "PWR_FLAG" (id 1) (at 228.6 101.6 0))
-    (property "Footprint" "" (id 2) (at 228.6 106.68 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (id 3) (at 228.6 106.68 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 6198d937-cdb1-4197-953c-d2c1d249815a))
   )
 
   (symbol (lib_id "Mechanical:MountingHole") (at 25.4 115.57 0) (unit 1)
@@ -3656,7 +3656,7 @@
     (in_bom yes) (on_board yes)
     (uuid ce665a87-e4e3-4201-9123-d7f12a0de959)
     (property "Reference" "D2" (id 0) (at 140.97 168.91 0))
-    (property "Value" "RED" (id 1) (at 140.97 171.45 0))
+    (property "Value" "WHITE" (id 1) (at 140.97 171.45 0))
     (property "Footprint" "LED_SMD:LED_0603_1608Metric" (id 2) (at 140.97 173.99 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -3891,8 +3891,8 @@
     (path "/722d19dc-3bbb-4f09-8644-9ba44e9be6dc"
       (reference "#FLG0101") (unit 1) (value "PWR_FLAG") (footprint "")
     )
-    (path "/7a4dd703-14bc-4cf8-bc14-86c2b20a5782"
-      (reference "#FLG0102") (unit 1) (value "PWR_FLAG") (footprint "")
+    (path "/69a7c179-446b-4bd9-a02d-6edec9d9c191"
+      (reference "#FLG?") (unit 1) (value "PWR_FLAG") (footprint "")
     )
     (path "/72ec0f5d-975b-472f-83a2-07c9869e6177"
       (reference "#PWR01") (unit 1) (value "+3.3V") (footprint "")
@@ -3929,9 +3929,6 @@
     )
     (path "/d2a61be9-a4d9-4006-a902-c32eba8ba397"
       (reference "#PWR012") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/198c41fc-1322-4478-b85f-35c279148562"
-      (reference "#PWR013") (unit 1) (value "VBUS") (footprint "")
     )
     (path "/128c1301-b8f5-4f3a-aff5-31e07ca165ec"
       (reference "#PWR014") (unit 1) (value "GND") (footprint "")
@@ -3974,6 +3971,9 @@
     )
     (path "/9600d527-7d39-4800-b481-11ff7021a773"
       (reference "#PWR0102") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/06c05959-0355-4e5e-b5fd-d3a70203028b"
+      (reference "#PWR?") (unit 1) (value "VBUS") (footprint "")
     )
     (path "/7e23f363-4338-4760-bfd5-59d2a11ccf99"
       (reference "C1") (unit 1) (value "22u") (footprint "Capacitor_SMD:C_0805_2012Metric")
@@ -4018,7 +4018,7 @@
       (reference "D1") (unit 1) (value "RED") (footprint "LED_SMD:LED_0603_1608Metric")
     )
     (path "/ce665a87-e4e3-4201-9123-d7f12a0de959"
-      (reference "D2") (unit 1) (value "RED") (footprint "LED_SMD:LED_0603_1608Metric")
+      (reference "D2") (unit 1) (value "WHITE") (footprint "LED_SMD:LED_0603_1608Metric")
     )
     (path "/cabae09a-cd34-4fc3-9711-77ba614aac6c"
       (reference "FB1") (unit 1) (value "120R") (footprint "Inductor_SMD:L_0603_1608Metric")
